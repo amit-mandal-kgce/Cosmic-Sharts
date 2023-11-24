@@ -9,7 +9,7 @@ import { BsCartPlus, BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs'
 
 const DetailPage = () => {
 
-  const router = useRouter();
+  const Router = useRouter();
 
     const params = useParams();
     const [productData, settProductData] = useState<any>();
@@ -53,7 +53,7 @@ const DetailPage = () => {
             <div className="text-3xl font-bold">{productData?.headings}</div>
             <div className="text-2xl">₹{prices}.00 <del className='text-gray-400 text-xl'>₹{productData?.priceDelet}.00</del> <span className='text-1xl font-semibold text-green-600'>({productData?.offer}% OFF)</span></div>
             <Link href="/" className="gap-2 flex bg-pink-500 py-2 text-gray-100 rounded-full w-44 px-5 hover:bg-pink-400"><BsCartPlus/><span>ADD TO CART</span></Link>
-            <div className="bg-orange-400 text-white rounded-full px-4 py-2 w-28 cursor-pointer" onClick={()=> router.push(`/orderdet/${id}`)}>BUY NOW</div>
+            <div className="bg-orange-400 text-white rounded-full px-4 py-2 w-28 cursor-pointer" onClick={()=> Router.push(`/orderdet/${id}`)}>BUY NOW</div>
             <div className="w-[70px] h-[3px] bg-gray-400"/>
             <div className="text-based">Name: {productData?.headings}</div>
             <div className="text-based">Category: {productData?.catagoris[0]}</div>
