@@ -1,6 +1,7 @@
 "use client"
 import products from '@/data/products';
-import { useParams, useRouter } from 'next/navigation';
+import { useParams } from 'next/navigation';
+import { useRouter } from 'next/router';
 import { useState, useEffect, ChangeEvent } from 'react';
 import React from 'react'
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';

@@ -1,7 +1,8 @@
 "use client"
 import React from 'react'
 import products from '@/data/products';
-import { useParams, useRouter } from 'next/navigation';
+import { useParams } from 'next/navigation';
+import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 
 const paymentpage = () => {
