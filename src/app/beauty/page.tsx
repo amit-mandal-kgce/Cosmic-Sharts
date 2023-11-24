@@ -1,12 +1,12 @@
 import ContainerMain from '@/components/ContainerMain'
-import SlideShow from '@/components/SlideShow'
 import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
     <main>
-      <SlideShow/>
-      <ContainerMain/>
+        <ContainerMain/>
     </main>
   )
 }
+
+export default page
