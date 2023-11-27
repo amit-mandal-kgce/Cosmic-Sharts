@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
-const page = () => {
+const LoginPages = () => {
 
   const router = useRouter();
   return (
@@ -32,4 +32,4 @@ const page = () => {
   )
 }
 
-export default page
+export default LoginPages
