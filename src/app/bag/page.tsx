@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 
-const page = () => {
+const Bagpage = () => {
   // prodcts adds POST
   const [productData, setProductData] = useState({
     image: '',
@@ -129,4 +129,4 @@ interface Product {
     </div>
 </main>
 )};
-export default page
+export default Bagpage

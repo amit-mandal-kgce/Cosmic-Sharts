@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
-const page = () => {
+const Signinpage = () => {
     const [productData, setProductData] = useState({
         email: '',
         password: '',
@@ -55,4 +55,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Signinpage
